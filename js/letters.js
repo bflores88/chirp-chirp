@@ -15,15 +15,15 @@ var counter = {
   "y" : 0,  "z" : 0
 }
 
-function countLetters(counter, sample_text){
+function countLetters(counter, sample_text) {
   // FIX ME
-  if(sample_text === ''){
+  if (sample_text === '') {
     return;
   }
 
   let thisChar = sample_text.charAt(0).toLowerCase();
 
-  if(counter.hasOwnProperty(thisChar)){
+  if (counter.hasOwnProperty(thisChar)) {
     counter[thisChar]++;
   }
   countLetters(counter, sample_text.slice(1));
